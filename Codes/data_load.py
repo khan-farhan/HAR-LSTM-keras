@@ -6,11 +6,11 @@ Accelerometer = ["body_acc_x_", "body_acc_y_", "body_acc_z_"]
 
 Activity = ["WALKING", "WALKING_UPSTAIRS", "WALKING_DOWNSTAIRS", "SITTING", "STANDING", "LAYING"]
 
-train_signals_path = [os.getcwd() + "/Data/UCI HAR Dataset/train/Inertial Signals/" + Accelerometer[i] + "train.txt" for i in range(3)]
-test_signals_path =  [os.getcwd() + "/Data/UCI HAR Dataset/test/Inertial Signals/" +  Accelerometer[i] + "test.txt" for i in range(3)]
+train_signals_path = [os.getcwd() + "/../Data/UCI HAR Dataset/train/Inertial Signals/" + Accelerometer[i] + "train.txt" for i in range(3)]
+test_signals_path =  [os.getcwd() + "/../Data/UCI HAR Dataset/test/Inertial Signals/" +  Accelerometer[i] + "test.txt" for i in range(3)]
 
-train_labels_path = os.getcwd() + "/Data/UCI HAR Dataset/train/y_train.txt"
-test_labels_path = os.getcwd() + "/Data/UCI HAR Dataset/test/y_test.txt"
+train_labels_path = os.getcwd() + "/../Data/UCI HAR Dataset/train/y_train.txt"
+test_labels_path = os.getcwd() + "/../Data/UCI HAR Dataset/test/y_test.txt"
 
 def one_hot(Y):
     Y = Y.reshape(len(Y))
