@@ -1,0 +1,1 @@
+**Human activity recognition** using LSTM in keras. The data is downloaded from uci repository. Details about data can be found [here](https://archive.ics.uci.edu/ml/datasets/human+activity+recognition+using+smartphones)
